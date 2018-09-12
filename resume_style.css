@@ -1,0 +1,120 @@
+body {
+	font-family:  Arial, Webdings, sans-serif;
+	color: #2C2C2C;
+}
+
+header, footer, aside, section {
+	box-sizing: border-box;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px dotted red;
+}
+header::after, section.practical::after, footer div::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* header */
+header h1 {
+	width: 30%;
+	float: left;
+}
+header .my-photo {
+	width: 30%;
+	float: left;
+}
+header .my-photo img {
+	border-radius: 15px;
+	
+}
+header aside {
+	width: 30%;
+	float: right;
+	text-align: right;
+}
+
+/* section personal */
+section {
+	border-top: 3px solid #E4E4E4;
+	padding-bottom: 15px;
+}
+section.personal p {
+	font-style: italic;
+	margin-bottom: 0;
+}
+
+/* section skills */
+section.skills ul {
+	column-count: 2;
+	column-gap: 30px;
+	margin-bottom: 0;
+}
+
+
+/* section practical */
+section.practical div {
+	box-sizing: border-box;
+	width: 45%;
+	float: left;
+	padding: 10px;
+}
+section.practical .years {
+	text-decoration: underline;
+}
+section.practical .post {
+	font-weight: bold;
+}
+.em {
+	font-style: italic;			/* section and footer */
+}
+
+/* footer */
+footer {
+	border-top: 3px solid #E4E4E4;
+	border-bottom: 20px solid #E4E4E4;
+}
+footer div p {
+	width: 30%;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 0;
+}
+
+
+
+
+
+
+/* effects */
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	text-shadow: -5px 5px 3px black;
+}
+a:hover img {
+	transform: scale(1.3);
+	transition: 0.3s;
+}
+header:hover,  footer:hover, section:hover {
+	background-color: #E4E4E4;
+}
+header h1:hover {
+	text-decoration: underline;
+	font-weight: 750;
+	letter-spacing: 2px;
+}
+header .my-photo img:hover {
+	border-radius: 10%;
+	transform: scale(1.05);
+	transition: 0.5s;
+	box-shadow: 5px 5px 20px black;
+}
+section.practical div:hover {
+	transform: scale(1.05);
+	transition: 0.5s;
+}
